@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// import { add } from "@pradumna.bajoria/arithmetic.operations";
 import "./App.css";
 
 const Add = () => {
@@ -18,6 +19,7 @@ const Add = () => {
         onChange={(e) => {
           setValue1(e.target.valueAsNumber);
           setResult(value2 + e.target.valueAsNumber);
+          // setResult(add(value2, e.target.valueAsNumber));
         }}
       />
       <span>+</span>
@@ -29,6 +31,7 @@ const Add = () => {
         onChange={(e) => {
           setValue2(e.target.valueAsNumber);
           setResult(value1 + e.target.valueAsNumber);
+          // setResult(add(value1, e.target.valueAsNumber));
         }}
       />
       <span>=</span>
@@ -59,6 +62,7 @@ const Multiply = () => {
         onChange={(e) => {
           setValue1(e.target.valueAsNumber);
           setResult(value2 * e.target.valueAsNumber);
+          // setResult(multiply(value2, e.target.valueAsNumber));
         }}
       />
       <span>x</span>
@@ -70,6 +74,7 @@ const Multiply = () => {
         onChange={(e) => {
           setValue2(e.target.valueAsNumber);
           setResult(value1 * e.target.valueAsNumber);
+          // setResult(multiply(value1, e.target.valueAsNumber));
         }}
       />
       <span>=</span>
